@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://external-preview.redd.it/uhq5zTcMPM3tOW_fbUz4PayDt_5pkEXdyXXoRWs3XOg.jpg?auto=webp&s=e06461124c1ccfdba7e9ece763b644ff68eeb06b');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    width: 100%;
+    max-width: 250px;
+    padding: 1%;
+    flex-wrap: wrap;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 9%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgb(45, 45, 161);
+    background: linear-gradient(0deg, rgba(45, 45, 161, 1) 0%, rgba(70, 70, 233, 1) 60%, rgba(72, 106, 240, 1) 100%);
+    padding: 0 10px;
+    color: white;
+}
+
+.apps {
+    display: flex;
+    padding: 2%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 5rem;
+    gap: 3%;
+    color: white;
+    font-size: 2vw;
+}
+
+.apps img {
+    width: 64%;
+    max-width: 80px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    height: 70%;
+    padding: 0 5%;
+    width: 100%;
+    background: rgb(45, 45, 161);
+    background: linear-gradient(0deg, rgb(32, 32, 194) 0%, rgba(1, 56, 255, 0.193) 60%, rgb(93, 119, 221) 100%);
+    color: white;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 0.3%;
+}
+
+.barra img {
+    width: 25px;
+    margin-right: 7px;
+}
+
+@media screen and (max-width: 768px) {
+    aside {
+        width: 100%;
+        max-width: none;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .apps {
+        font-size: 3vw;
+    }
+
+    .barra {
+        font-size: 1.5vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .apps {
+        font-size: 4vw;
+    }
+
+    .barra {
+        font-size: 2vw;
+    }
+}
