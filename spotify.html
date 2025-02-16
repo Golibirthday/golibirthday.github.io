@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #1a8c14;
+      font-family: Arial, sans-serif;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .container {
+      position: relative;
+      text-align: center;
+      width: 80%;
+      max-width: 1200px;
+      min-height: 400px;
+    }
+
+    .content {
+      z-index: 2;
+      padding: 40px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .content img {
+        padding: 10%;
+        padding-right: 20%;
+        width: 30rem;
+    }
+
+    .zigzag-image {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: 0;
+      background-size: cover;
+      animation: zigzag 10s infinite;
+    }
+
+    .left-image {
+      left: -50px;
+    }
+
+    .right-image {
+      right: -50px;
+    }
+
+    @keyframes zigzag {
+      0% {
+        transform: translateY(0);
+      }
+      25% {
+        transform: translateY(40px);
+      }
+      50% {
+        transform: translateY(0);
+      }
+      75% {
+        transform: translateY(-40px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+   
+    <div class="zigzag-image left-image" style="background-image: url('https://via.placeholder.com/100');"></div>
+    <div class="zigzag-image right-image" style="background-image: url('https://via.placeholder.com/100');"></div>
+<a href="https://open.spotify.com/intl-pt/track/0tkBOcK7oRVXQJY97zzSvr">
+    <div class="content">
+        <img src="https://mundovinyl.com.br/wp-content/uploads/2023/02/capa-16.jpeg.webp">
+      <h1>Telescope</h1>
+      <p>Deixei essa música para você, acho que me fez pensar em aniversários e tal <3</p>
+    </div>
+</a>
+  </div>
+
+</body>
+</html>
