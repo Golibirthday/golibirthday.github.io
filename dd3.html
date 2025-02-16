@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2023</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #8753ff;
+      font-family: Arial, sans-serif;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    .container {
+      position: relative;
+      text-align: center;
+      width: 80%;
+      max-width: 1200px;
+      min-height: 400px;
+    }
+
+    .content {
+      z-index: 2;
+      padding: 40px;
+      background-color: rgb(252, 227, 255);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    .zigzag-image {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: 0;
+      background-size: cover;
+      animation: zigzag 10s infinite;
+    }
+
+    .left-image {
+      left: -1100px;
+      top: -250px;
+    }
+
+    .right-image {
+      right: -200px;
+      top: 50px;
+    }
+    .left-image img{
+        width:30vw;
+    }
+
+    .right-image img{
+        width:30vw;
+    }
+
+    @keyframes zigzag {
+      0% {
+        transform: translateY(0);
+      }
+      25% {
+        transform: translateY(40px);
+      }
+      50% {
+        transform: translateY(0);
+      }
+      75% {
+        transform: translateY(-40px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+   
+    <div class="zigzag-image left-image" style="background-image: url('https://via.placeholder.com/100');">
+        <img src="https://media.discordapp.net/attachments/1134904308350062683/1340734998830907442/689079cd-58e3-4d7b-aeb4-20f83e021e70_1.png?ex=67b37045&is=67b21ec5&hm=7fafbb7a6720cac6e3634ceed0f73022140cb94c23d0fab88d853d9b9b727a28&=&format=webp&quality=lossless&width=1005&height=565">
+        <img src="https://media.discordapp.net/attachments/1134904308350062683/1340732268456579253/20240508_002725.jpg?ex=67b36dba&is=67b21c3a&hm=cefd82c675e9d4ee12c16d74bc430634e259a630c0ce4ee809c589550c48859e&=&format=webp&width=565&height=565">
+        <img src="">
+        <img src="">
+    </div>
+    <div class="content">
+        <h1>2023</h1>
+        <p> Acho que talvez foi um dos anos que mais aproximou a gente, e um dos mais estressantes também né...
+            A gente continuava jogando Fortnite, não tanto quanto antes, e também as calls contigo acabaram de fato, mas ainda era divertido.
+            Já era o último ano de escola nossa, você ainda tinha bastante dúvida tanto eu, lembro que no começo até falava de talvez fazer T.I ainda, também lembro de falar sobre fazer maquiagem em pessoas falecidas (Ainda apoio se um dia acabar ficando afim de fazer!!!).
+            Você sempre dizia que eu te inspirava a fazer coisas e em relação artística e isso até hoje me deixa muito feliz e por mais que não segui a carreira de design gráfico como eu queria originalmente igual já comentei contigo, hoje em dia você me inspira por ter ido com tudo nela, eu sinto muito muito orgulho de você.
+            Nós terminamos nossos anos de  boa, você me mostrou seu cabelo lindão, finalmente, e acho que isso até significou bastante pra mim por causa que senti que você realmente confiava em mim, pode ser bobeira mas senti como um ato de confiança, que você confiava em mim, sabe?
+            Fizemos o maldito ENEM, que sua nota só sairia no próximo, mas pelo menos descansamos nossas mentes depois de anos de escola finalmente!!! 
+           
+           
+           </p>
+      </div>
+
+    <div class="zigzag-image right-image" style="background-image: url('https://via.placeholder.com/100');">
+        <img src="https://media.discordapp.net/attachments/860934202902708275/1191155671366905896/20230928_163906.jpg?ex=67b3186a&is=67b1c6ea&hm=d0ddabae0e03bed69e23f6ead7779640efd383701a97f781bed41e99cd09fa7b&=&format=webp&width=805&height=565">
+        <img src="https://media.discordapp.net/attachments/1134904308350062683/1340733286024089670/Screenshot_2023-08-10-22-35-16-351_digital.daylight.partyparrot.png?ex=67b36ead&is=67b21d2d&hm=17fd5c2b56b640d6985e3698c51e83c3d602577bf4c968ca30f43aa69f208dfe&=&format=webp&quality=lossless&width=606&height=565">
+       
+        <img src="">
+        <img src="">
+        
+    </div>
+  </div>
+
+</body>
+</html>
+
