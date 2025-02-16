@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2021</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #371350;
+      font-family: Arial, sans-serif;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    .container {
+      position: relative;
+      text-align: center;
+      width: 80%;
+      max-width: 1200px;
+      min-height: 400px;
+    }
+
+    .content {
+      z-index: 2;
+      padding: 40px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    .zigzag-image {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: 0;
+      background-size: cover;
+      animation: zigzag 10s infinite;
+    }
+
+    .left-image {
+      left: -1100px;
+      top: -250px;
+    }
+
+    .right-image {
+      right: -200px;
+      top: 50px;
+    }
+    .left-image img{
+        width:30vw;
+    }
+
+    .right-image img{
+        width:30vw;
+    }
+
+    @keyframes zigzag {
+      0% {
+        transform: translateY(0);
+      }
+      25% {
+        transform: translateY(40px);
+      }
+      50% {
+        transform: translateY(0);
+      }
+      75% {
+        transform: translateY(-40px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+   
+    <div class="zigzag-image left-image" style="background-image: url('https://via.placeholder.com/100');">
+        <img src="https://media.discordapp.net/attachments/1134904308350062683/1340717368791535707/887887e0-27ab-4ddb-ad8c-3c3d085675d5.png?ex=67b35fda&is=67b20e5a&hm=40dfb975d0e22617a20d843e01cf58f5c86fbc75556eff53aedb9203d44ea861&=&format=webp&quality=lossless&width=1005&height=565">
+        <img src="https://media.discordapp.net/attachments/1134904308350062683/1340717370674778163/d17eac9b-4c0e-45dd-8a72-b3057bd0ade9-2.png?ex=67b35fda&is=67b20e5a&hm=60f879a80e4c8f027e54a1373e08a87432fe3fab1331e6fbed0f854df3e46bd2&=&format=webp&quality=lossless&width=1005&height=565">
+        <img src="">
+        <img src="">
+    </div>
+    <div class="content">
+        <h1>2021</h1>
+        <p>A gente se conheceu. Lá em Junho ou Julho. Foi em um momento bom em que eu não tava tão bom. A primeira vez que jogamos juntos foi por que queríamos ver o evento aleatório da Epic de marca de garrafa d'água que envolvia Easy Life (que agora é Hard Life né).
+            Depois disso, por incrível que pareça, a gente se aproximou, até quando eu não esperava, mandava mensagem pra mim perguntando se tava tudo bom ou se queria jogar comigo. Parecia ser algo bobo pra você talvez, mas pra mim começou a significar muito, já que sempre era (ou até sou ainda) quem acaba correndo atrás dos outros, sendo assim, um oi na dm já bastava ou até hoje já basta pra mim ficar feliz pela consideração. Com o tempo, fui descobrindo como cê era legal e cada vez mais a gente jogava Fortnite junto, você quase sempre costumava chamar e por mais que eu não podia falar, mesmo assim nós ficávamos horas comigo teclando e você falando no mic, teorizando, às vezes a gente nem jogava direito, só ficava parando conversando sobre as coisas que tinham na época do jogo, falando sobre a vida ou só bobeira mesmo.
+            Até hoje eu lembro que nós dois jogávamos e tinha aquele maldito baú cósmico que sempre aparecia. 
+           </p>
+      </div>
+
+    <div class="zigzag-image right-image" style="background-image: url('https://via.placeholder.com/100');">
+        <img src="https://media.discordapp.net/attachments/1134904308350062683/1340717369428934687/19f779f9-778c-40ed-8c6b-db66c8d4dbdb.png?ex=67b35fda&is=67b20e5a&hm=1130b32352144705d66087adc0726672968be544caca75a9d564953e04462ec0&=&format=webp&quality=lossless&width=1005&height=565">
+        <img src="https://media.discordapp.net/attachments/1134904308350062683/1340717370003427468/ca050d38-5dcd-4ccb-9ac9-5719e1a3d993-1.png?ex=67b35fda&is=67b20e5a&hm=75c82fb6e0e58cefbbf626a1fbbe681d24fed3e26387a39d5eefd0850625cb7b&=&format=webp&quality=lossless&width=1005&height=565">
+        <img src="">
+        <img src="">
+        
+    </div>
+  </div>
+
+</body>
+</html>
+
